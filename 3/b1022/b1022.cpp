@@ -19,6 +19,7 @@ int main()
     {
         printf("%d", c[i]);
     }
+    
     printf("\n");
     return 0;
 }
