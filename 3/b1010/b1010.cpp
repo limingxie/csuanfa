@@ -31,4 +31,37 @@ int main()
     }
 }
 
-//g++ a1065/*.cpp -o 3.out && ./3.out
+//g++ b1010/*.cpp -o 3.out && ./3.out
+
+
+
+/* 
+#include<stdio.h>
+int main()
+{
+    int i=1;
+    int a,a1;
+    int b,b1;
+    while (scanf("%d%d", &a, &b) != EOF)
+    {
+        a1 = a*b;
+        b1 = b - 1;
+             
+        if (i)     
+        {          
+            if (b1 != -1)      
+            {
+                printf("%d %d", a1, b1);        //第一个数前面无空格
+                i = 0;
+            }
+        }
+        else
+        {
+            if (b1 != -1)
+                printf(" %d %d", a1, b1);       //之后的数设置前空格，这样最后一个数后面就不会有空格
+        }
+        if (i)
+            printf("%d %d", 0, 0);
+    }
+}
+*/
