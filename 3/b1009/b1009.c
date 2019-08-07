@@ -17,6 +17,7 @@ int main()
         }
         else
         {
+            v[num][h++] = '\0';
             num++;
             h = 0;
         }
