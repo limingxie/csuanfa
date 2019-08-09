@@ -1,43 +1,39 @@
 #include <cstdio>
-
+const int maxn = 1111;
+double p[maxn] = {};
 int main()
 {
+    int b;
+    double c;
+
     int n = 0;
     scanf("%d", &n);
-
-    char m[5] = {'S', 'H', 'C', 'D','J'};
-
-    int a[55], b[55], c[55];
-
-    for (int i = 1; i <= 54; i++)
+    for (int i = 1; i <= n; i++)
     {
-        a[i] = i;
+        scanf("%d %lf", &b, &c);
+        p[b] += c;
     }
 
-    for (int i = 1; i <= 54; i++)
+    scanf("%d", &n);
+    for (int i = 1; i <= n; i++)
     {
-        scanf("%d", &c[i]);
+        scanf("%d %lf", &b, &c);
+        p[b] += c;
     }
 
-    for (int i = 0; i < n; i++)
+    int count = 0;
+    for (int i = 0; i <= maxn; i++)
     {
-        for (int i = 1; i < 55; i++)
+        if (p[i] != 0)
+            count++;
+    }
+
+    printf("%d", count);
+    for (int i = maxn; i >= 0; i--)
+    {
+        if (p[i] != 0)
         {
-            b[c[i]] = a[i];
-        }
-
-        for (int i = 1; i < 55; i++)
-        {
-            a[i] = b[i];
-        }
-    }
-
-    for (int i = 1; i < 55; i++)
-    {
-        a[i]--;
-        printf("%c%d", m[a[i]/13], a[i]%13 + 1);
-        if (i < 54){
-            printf(" ");
+            printf(" %d %.1f", i, p[i]);
         }
     }
 }
