@@ -21,7 +21,7 @@ int max(int a, int b, int c)
     {
         return 2;
     }
-    else 
+    else
     {
         return 0;
     }
@@ -53,12 +53,10 @@ int main()
     p2.max = max(p2.t[0], p2.t[1], p2.t[2]);
     p3.max = max(p3.t[0], p3.t[1], p3.t[2]);
 
-printf("%c %c %c ", result(p1.max), result(p2.max), result(p3.max));
+    printf("%c %c %c ", result(p1.max), result(p2.max), result(p3.max));
 
-
-double aa = (p1.t[p1.max] * p2.t[p2.max] * p3.t[p3.max] * 0.65 - 1) * 2;
-printf("%.2f", aa);
-    // printf("%c %c %c %f", result(p1.max), result(p2.max), result(p3.max),   );
+    double aa = (p1.t[p1.max] * p2.t[p2.max] * p3.t[p3.max] * 0.65 - 1) * 2;
+    printf("%.2f", aa);
 }
 
 //g++ a1011/*.cpp -o 3_2.out && ./3_2.out
