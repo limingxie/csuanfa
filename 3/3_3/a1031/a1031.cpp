@@ -11,12 +11,6 @@ int main()
     n1 = (slen + 2) / 3;
     n2 = slen + 2 - 2 * n1;
 
-printf("======%d\n", n1);
-printf("++++++%d\n", n2);
-printf("------%d\n", slen);
-printf("~~~~~~%c\n", s[slen - 1]);
-
-
     for (int i = 0; i <= n1 - 2; i++)
     {
         printf("%c", s[i]);
