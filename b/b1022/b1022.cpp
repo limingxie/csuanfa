@@ -24,4 +24,4 @@ int main()
     return 0;
 }
 
-//g++ b1022/*.cpp -o b1022.out && ./b1022.out
+//g++ b1022/*.cpp -o 3.out && ./3.out
