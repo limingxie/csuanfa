@@ -35,14 +35,14 @@ int main()
             continue;
         }
         int slen = strlen(s[i]);
-        if (slen > strlen(z) )
+        if (slen > strlen(z))
         {
             slen = strlen(z);
         }
         char t[1010];
         for (int j = 0; j < slen; j++)
         {
-            
+
             if (s[i][j] == z[j])
             {
                 t[j] = s[i][j];
@@ -54,7 +54,6 @@ int main()
             }
         }
     }
-
 
     int zlen = strlen(z);
     if (zlen > 0)
@@ -124,6 +123,3 @@ int main(){
 }
 */
 //g++ a1077/*.cpp -o a.out && ./a.out
-
-
-
