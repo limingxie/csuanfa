@@ -9,7 +9,6 @@ void reverse_str(char s[1010])
     for (int k = slen - 1; k >= 0; k--)
     {
         r[num] = s[k];
-
         num++;
     }
     strcpy(s, r);
@@ -23,50 +22,56 @@ int main()
     getchar();
     for (int i = 0; i < n; i++)
     {
-        fgets(s[i], 1010, stdin);
+        gets(s[i]);
         reverse_str(s[i]);
     }
 
     for (int i = 0; i < n; i++)
     {
-        if (i == 0)
-        {
-            strcpy(z, s[i]);
-            continue;
-        }
-        int slen = strlen(s[i]);
-        if (slen > strlen(z))
-        {
-            slen = strlen(z);
-        }
-        char t[1010];
-        for (int j = 0; j < slen; j++)
-        {
-
-            if (s[i][j] == z[j])
-            {
-                t[j] = s[i][j];
-            }
-            else
-            {
-                strcpy(z, t);
-                break;
-            }
-        }
+        printf("%s\n", s[i]);
     }
 
-    int zlen = strlen(z);
-    if (zlen > 0)
-    {
-        for (int i = zlen - 1; i >= 0; i--)
-        {
-            printf("%c", z[i]);
-        }
-    }
-    else
-    {
-        printf("nai");
-    }
+
+    // for (int i = 0; i < n; i++)
+    // {
+    //     if (i == 0)
+    //     {
+    //         strcpy(z, s[i]);
+    //         continue;
+    //     }
+    //     int slen = strlen(s[i]);
+    //     if (slen > strlen(z))
+    //     {
+    //         slen = strlen(z);
+    //     }
+    //     char t[1010];
+    //     for (int j = 0; j < slen; j++)
+    //     {
+
+    //         if (s[i][j] == z[j])
+    //         {
+    //             t[j] = s[i][j];
+    //         }
+    //         else
+    //         {
+    //             strcpy(z, t);
+    //             break;
+    //         }
+    //     }
+    // }
+
+    // int zlen = strlen(z);
+    // if (zlen > 0)
+    // {
+    //     for (int i = zlen - 1; i >= 0; i--)
+    //     {
+    //         printf("%c", z[i]);
+    //     }
+    // }
+    // else
+    // {
+    //     printf("nai");
+    // }
 
     return 0;
 }
