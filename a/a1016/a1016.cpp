@@ -111,8 +111,8 @@ int main()
                 on = next;
                 break;
             }
-            printf("%02d:%02d:%02d", rec[on].dd, rec[on].hh, rec[on].mm);
-            printf("%02d:%02d:%02d", rec[off].dd, rec[off].hh, rec[off].mm);
+            printf("%02d:%02d:%02d ", rec[on].dd, rec[on].hh, rec[on].mm);
+            printf("%02d:%02d:%02d ", rec[off].dd, rec[off].hh, rec[off].mm);
             int time = 0, money = 0;
             get_ans(on, off, time, money);
             AllMoney += money;
