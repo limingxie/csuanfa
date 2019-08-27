@@ -61,5 +61,6 @@
         "vector": "cpp",
         "*.tcc": "cpp",
         "cinttypes": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
 }
